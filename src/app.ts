@@ -3,6 +3,8 @@ import IndexRouter from "./Routes/index";
 const express = require('express');
 const app = express();
 const cors = require("cors");
+import { Request, Response, NextFunction } from 'express';
+
 
 const PORT: any = process.env.PORT ?? 8085;
 
