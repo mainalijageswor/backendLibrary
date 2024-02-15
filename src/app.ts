@@ -4,9 +4,8 @@ const express = require('express');
 const app = express();
 const cors = require("cors");
 
-const PORT: any = 8085;
 
-app.listen(PORT, () => {
+app.listen(8085, () => {
   console.log(`Server is running on Port ${PORT}`);
 });
 app.use(cors());
