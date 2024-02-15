@@ -1,7 +1,6 @@
-import express, { urlencoded, Request, Response, NextFunction } from "express";
 import "dotenv/config";
 import IndexRouter from "./Routes/index";
-
+const express = require('express');
 const app = express();
 const cors = require("cors");
 
@@ -12,7 +11,7 @@ app.listen(PORT, () => {
 });
 app.use(cors());
 app.use(express.json());
-app.use(urlencoded({ extended: true }));
+// app.use(urlencoded({ extended: true }));
 app.use("/api/v1", IndexRouter);
 app.use((req: Request, res: Response, next: NextFunction) => {
   const error: Error & { status?: number } & { message: String } = new Error();
