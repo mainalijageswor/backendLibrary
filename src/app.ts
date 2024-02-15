@@ -1,4 +1,4 @@
-import "dotenv/config";
+import { config } from "dotenv";
 import IndexRouter from "./Routes/index";
 const express = require('express');
 const app = express();
