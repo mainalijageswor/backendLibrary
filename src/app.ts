@@ -1,5 +1,5 @@
 require('dotenv').config();
-import IndexRouter from "./Routes/index";
+const IndexRouter = require("./Routes/index");
 const express = require('express');
 const app = express();
 const cors = require("cors");
